@@ -29,7 +29,7 @@ You have to know that :
 
 *	works only with JPG files (for now).
 
-For support, please visit <a href="http://www.alticreation.com/en/alti-watermark/" target="_blank">Watermark Plugin</a>.
+For support, please visit http://www.alticreation.com/en/alti-watermark/
 
 == Installation ==
 
