@@ -14,10 +14,10 @@ This plugin allows to add a watermark on your images uploaded.
 
 This plugin allows to add a watermark on the images uploaded. 
 
-It applies watermark on *new images as well as images already uploaded*. 
+It applies watermark on **new images as well as images already uploaded**. 
 By deactivating the plugin, the watermark will be removed on all images.
 
-What makes this plugin a really powerful one, is that the watermark is placed on your images through a htaccess and php file. This means your images are actually *not modified*. You can still download them from your FTP, and they will not have any watermark.
+What makes this plugin a really powerful one, is that the watermark is placed on your images through a htaccess and php file. This means your images are actually **not modified**. You can still download them from your FTP, and they will not have any watermark.
 
 The watermark is only visible if you try to download the images from a web browser.
 
