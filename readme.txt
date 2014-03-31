@@ -28,7 +28,7 @@ You have to know that :
 
 == Installation ==
 
-1. Upload `alti-watermark.zip` to the `/wp-content/plugins/` directory
+1. Upload `alti-watermark` folder to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 
 Note : GD extension is needed.
@@ -47,6 +47,7 @@ You can ask question and read documentation at [alti-Watermark plugin](http://ww
 == Screenshots ==
 
 1. Administration Page for the plugin.
+2. Watermark rendered on an image.
 
 == Upgrade Notice ==
 * No upgrade for now.
