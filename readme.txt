@@ -29,6 +29,8 @@ You have to know that :
 
 *	works only with JPG files (for now).
 
+For support, please visit <a href="http://www.alticreation.com/en/alti-watermark/" target="_blank">Watermark Plugin</a>.
+
 == Installation ==
 
 1. Upload `alti-watermark` folder to the `/wp-content/plugins/` directory
