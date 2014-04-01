@@ -1,7 +1,7 @@
 <?php 
 /*
     Plugin Name: Watermark
-    Plugin URI: http://www.alticreation.com/alti-watermark-plugin-wordpress
+    Plugin URI: http://www.alticreation.com/en/alti-watermark/
     Description: Add a watermark on all your pictures even the one which are already uploaded. You can setup this plugin through the Media category in the side menu.
     Author: Alexis Blondin
     Version: 0.1
