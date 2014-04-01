@@ -24,9 +24,7 @@ The watermark is only visible if you try to download the images from a web brows
 You have to know that :
 
 *	you need to be able to create a htaccess file in your uploads directory.
-
 *	you need the GD library.
-
 *	works only with JPG files (for now).
 
 For support, please visit [alti-Watermark plugin](http://www.alticreation.com/en/alti-watermark/ "watermark plugin for Wordpress by alticreation")
