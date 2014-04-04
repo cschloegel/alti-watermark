@@ -1,7 +1,7 @@
 === Plugin Name ===
 Contributors: alticreation
 Donate link: http://www.alticreation.com/en/alti-watermark/
-Tags: watermark, medias, photography, picture, copyright, photos, logo, upload, signature, images, uploads, media, photo copyright
+Tags: watermark, medias, photography, picture, copyright, photos, logo, upload, signature, images, uploads, media
 Requires at least: 3.0.1
 Tested up to: 3.8.1
 Stable tag: 0.1
