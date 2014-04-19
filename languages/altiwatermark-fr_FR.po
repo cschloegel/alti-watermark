@@ -1,0 +1,117 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: altiwatermark\n"
+"POT-Creation-Date: 2014-04-19 12:14-0400\n"
+"PO-Revision-Date: 2014-04-19 12:24-0400\n"
+"Last-Translator: \n"
+"Language-Team: alticreation <alexis@alticreation.com>\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: __;_e;__();_e()\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: admin-page.php:58
+msgid "by"
+msgstr "par"
+
+#: admin-page.php:59
+msgid ""
+"Apply a watermark on all your photographies. This action is cancelable just "
+"by deactivating the plugin. <br> The watermark will be applied even in your "
+"photos already uploaded."
+msgstr ""
+"Applique un filigrane sur toutes vos photos. Vous pouvez retirer le "
+"filigrane simplement en désactivant l'extension. <br> Le filigrane est "
+"appliqué sur toutes vos photos, même celles déjà téléchargées."
+
+#: admin-page.php:62
+msgid "The watermark has been updated."
+msgstr "Le filigrane a été mis à jour."
+
+#: admin-page.php:66
+msgid ""
+"There was an error while processing the image submited. Please try again or "
+"with a different image format."
+msgstr ""
+"Il y a eu une erreur dans le traitement de l'image. Pouvez-vous essayer avec "
+"un format d'image différent ?"
+
+#: admin-page.php:70
+msgid "The width setting has been updated."
+msgstr "Le paramètre de largeur a été mis à jour."
+
+#: admin-page.php:74
+msgid ""
+"There was an error while updating the width setting. <br> Apparently you "
+"don't have rights to modify or create a file on your uploads directory."
+msgstr ""
+"Une erreur s'est produite pendant la mise à jour du paramètre de largeur. "
+"<br> Il semble que vous ne puissiez pas modifier ou créer un fichier dans le "
+"repertoire des «uploads»."
+
+#: admin-page.php:81
+msgid "Apply to images"
+msgstr "Appliquer aux images"
+
+#: admin-page.php:86
+msgid "on generated thumbs of height = "
+msgstr "sur les miniatures générées dont la hauteur = "
+
+#: admin-page.php:86
+msgid "or more"
+msgstr "ou plus"
+
+#: admin-page.php:93
+msgid "Choose a watermark"
+msgstr "Choisir un filigrane"
+
+#: admin-page.php:100
+msgid "Preview"
+msgstr "Prévisualisation"
+
+#: admin-page.php:104
+msgid "Real size is actually"
+msgstr "La taille réelle est"
+
+#: admin-page.php:104
+msgid "The background gradient is for contrast check."
+msgstr "L'arrière-plan en dégradé est présent pour vérfier le contraste"
+
+#: admin-page.php:110
+msgid "Help, Support"
+msgstr "Aide, support"
+
+#: admin-page.php:112
+msgid ""
+"A problem, a question ? Please read and leave a message in the <a href="
+"\"http://www.alticreation.com/en/alti-watermark/\" target=\"_blank\">alti "
+"Watermark plugin page</a>."
+msgstr ""
+"Un problème, une question ? Lisez et laissez un message sur la <a href="
+"\"http://www.alticreation.com/en/alti-watermark/\" target=\"_blank\">page de "
+"l'extension alti Watermark</a>."
+
+#: admin-page.php:113
+msgid "Love this plugin ?"
+msgstr "Vous aimez cette extension ?"
+
+#: admin-page.php:113
+msgid "Donate !"
+msgstr "Donnez !"
+
+#: admin-page.php:120
+msgid "Update"
+msgstr "Mettre à jour"
+
+#: admin-page.php:131
+msgid "This plugin is developed by"
+msgstr "Cette extension est développée par"
+
+#: index.php:50
+msgid "Settings"
+msgstr "Paramètres"
