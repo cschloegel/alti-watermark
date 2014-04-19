@@ -13,8 +13,8 @@ $acw_plugins            = array(
                             );
 
 $acw_watermark              = array(
-                                'name'      => 'watermark.png'
-                            );
+                            'name'      => 'watermark.png'
+                        );
 
 $acw_relativePaths      = array(
                             'uploadsToPlugins'  => getRelativePath(

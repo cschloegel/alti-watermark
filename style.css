@@ -1,3 +1,12 @@
+#ac-aw-admin-page-container h2 span {
+	font-size: 55%;
+	color:#238ecb;
+}
+#ac-aw-admin-page-container h2 span a {
+	color:#238ecb;
+	text-decoration: none;
+	border-bottom: 1px dotted #ccc;
+}
 #ac-aw-admin-page-container .preview {
 	border:1px solid #ccc;
 	max-width:250px;

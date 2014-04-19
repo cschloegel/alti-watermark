@@ -12,21 +12,22 @@ if (
 
   require_once 'functions.php';
 
-  // Get File and Path info
+// Get File and Path info
   $watermarkName    = $_GET['watermarkName'];
   $imageRequested   = $_GET['imageRequested'];
   $pluginData       = pathinfo(__FILE__);
   $pluginsToUploads = pathinfo(getRelativePath($_SERVER['SCRIPT_NAME'], $_SERVER['REQUEST_URI']) );
 
-  // Works only with JPG Files
+// Works only with JPG Files
   $formats = 'jpg|jpeg|jpe';
 
   if ( 
-    (
-    is_file( $pluginsToUploads['dirname'].'/'.basename($_GET['imageRequested']) ) // depending of server configs
-    ||
-    is_file( utf8_decode($pluginsToUploads['dirname'].'/'.basename($_GET['imageRequested']) )) // depending of server configs
-    )
+    ( is_file( $pluginsToUploads['dirname'].'/'.basename($_GET['imageRequested']) ) 
+    // depending of server configs
+||
+is_file( utf8_decode($pluginsToUploads['dirname'].'/'.basename($_GET['imageRequested']) )) 
+// depending of server configs
+)
     && preg_match('/('.$formats.')$/i', $pluginsToUploads['extension']) )
   {
 
@@ -35,7 +36,7 @@ if (
     } else {
       $imagePathName = utf8_decode($pluginsToUploads['dirname'].'/'.basename($_GET['imageRequested']) );
     }
-    
+
     $watermark      = imagecreatefrompng($watermarkName);
     $image          = imagecreatefromjpeg( $imagePathName );
 
@@ -46,7 +47,7 @@ if (
       imagesx($image) , 
       imagesy($image) , 
       imagecolorallocatealpha($image, 0, 0, 0, 127) 
-    );
+      );
     imagecopy(
       $image, 
       $watermark, 
@@ -56,7 +57,7 @@ if (
       0, 
       imagesx($watermark), 
       imagesy($watermark)
-    );
+      );
 
     header('Last-Modified: '.gmdate('D, d M Y H:i:s T', filemtime ( $imagePathName )));
     header('Content-Type: image/jpeg');

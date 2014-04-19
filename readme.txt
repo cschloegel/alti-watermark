@@ -1,10 +1,10 @@
 === Plugin Name ===
 Contributors: alticreation
 Donate link: http://www.alticreation.com/en/alti-watermark/
-Tags: watermark, medias, photography, picture, copyright, photos, logo, upload, signature, images, uploads, media
+Tags: watermark, medias, photography, picture, copyright, photos, logo, upload, signature, images, uploads, media, marca de agua, filigrane
 Requires at least: 3.0.1
-Tested up to: 3.8.1
-Stable tag: 0.1
+Tested up to: 3.9
+Stable tag: 0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -59,3 +59,9 @@ You can ask question and read documentation at [alti-Watermark plugin](http://ww
 
 = 0.1 =
 * Initial release
+
+= 0.2 =
+* Do not erase a previous htaccess file in the uploads directory, but merge both content.
+* Fix the width setting. e.g : The parameter for 400px width was applyed on 500px width images rather than 400px. 
+Now, it is applied correctly.
+* New translations in French, Canadian French and Spanish.
