@@ -57,11 +57,11 @@ You can ask question and read documentation at [alti-Watermark plugin](http://ww
 
 == Changelog ==
 
-= 0.1 =
-* Initial release
-
 = 0.2 =
 * Do not erase a previous htaccess file in the uploads directory, but merge both content.
 * Fix the width setting. e.g : The parameter for 400px width was applyed on 500px width images rather than 400px. 
 Now, it is applied correctly.
 * New translations in French, Canadian French and Spanish.
+
+= 0.1 =
+* Initial release
