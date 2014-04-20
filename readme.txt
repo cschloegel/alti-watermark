@@ -4,7 +4,7 @@ Donate link: http://www.alticreation.com/en/alti-watermark/
 Tags: watermark, medias, photography, picture, copyright, photos, logo, upload, signature, images, uploads, media, marca de agua, filigrane
 Requires at least: 3.0.1
 Tested up to: 3.9
-Stable tag: 0.2
+Stable tag: 0.2.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -56,6 +56,12 @@ You can ask question and read documentation at [alti-Watermark plugin](http://ww
 * No upgrade for now.
 
 == Changelog ==
+
+= 0.2.5 =
+* A bug happens while updating from 0.1 to 0.2. The watermark is deleted because of the update. 
+This version will fix this **major issue**. 
+But you'll still have to re-upload your watermark if you were using 0.1 or 0.2 version.
+* Added a direct setting button to the plugin which appears in the plugins list.
 
 = 0.2 =
 * Do not erase a previous htaccess file in the uploads directory, but merge both content.

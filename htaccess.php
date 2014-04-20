@@ -32,7 +32,7 @@ else {
 
 $htaccessContent     .= '# BEGIN alti-watermark Plugin'."\n\r\n";
 $htaccessContent     .= 'RewriteEngine on'."\n";
-$htaccessContent     .= 'RewriteRule ^(?!.*'.$widthRegex.'\.jpg$)(.+)(\.jpg)$ '.$acw_relativePaths['uploadsToPlugins'].'watermark.php?imageRequested=$0&watermarkName='.$acw_watermark['name']."\n\r\n";
+$htaccessContent     .= 'RewriteRule ^(?!.*'.$widthRegex.'\.jpg$)(.+)(\.jpg)$ '.$acw_relativePaths['uploadsToPlugins'].'watermark.php?imageRequested=$0&watermarkName='.$acw_plugins['baseurl'].$acw_plugins['subdir'].'-data/'.$acw_watermark['name']."\n\r\n";
 $htaccessContent     .= '# END alti-watermark Plugin. (generated on '.date('Y-m-d H:i.s').') [width='.$width.']'."\n";
 
 if( is_writable($acw_uploads['basedir'].'/') ) {
