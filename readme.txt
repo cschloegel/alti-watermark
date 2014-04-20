@@ -60,7 +60,7 @@ You can ask question and read documentation at [alti-Watermark plugin](http://ww
 = 0.2.5 =
 * A bug happens while updating from 0.1 to 0.2. The watermark is deleted because of the update. 
 This version will fix this **major issue**. 
-But you'll still have to re-upload your watermark if you were using 0.1 or 0.2 version.
+If you were using version 0.2 or 0.1. Please save your watermark image to be able to re-upload it in the new version. This problem will not happen in the future.
 * Added a direct setting button to the plugin which appears in the plugins list.
 
 = 0.2 =
