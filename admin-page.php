@@ -2,6 +2,11 @@
 
 require_once('paths.php');
 
+// Check if watermark doesnt exist
+if ( !file_exists($acw_relativePaths['adminToPlugins'].'/'.$acw_watermark['name']) ) {
+            rename( $acw_relativePaths['adminToPlugins'].'/sample-'.$acw_watermark['name'], $acw_relativePaths['adminToPlugins'].'/'.$acw_watermark['name'] );
+}
+
 // Check if FILES is submited
 if(isset( $_FILES['watermarkFile']['name']) && $_FILES['watermarkFile']['name'] != '' && preg_match('/^image/i', $_FILES['watermarkFile']['type']) && $_FILES['watermarkFile']['error'] == 0) {
 
@@ -25,7 +30,7 @@ if(isset( $_FILES['watermarkFile']['name']) && $_FILES['watermarkFile']['name'] 
 }
 
 // Check if settings are submited
-if(isset( $_POST['watermarkSize'] )) {
+if ( isset( $_POST['watermarkSize'] ) ) {
     $width = $_POST['watermarkSize'];
     if(is_numeric($width)) {
         include 'htaccess.php';
@@ -35,8 +40,7 @@ if(isset( $_POST['watermarkSize'] )) {
     } else {
         $successWidth = TRUE; 
     }
-}
-
+} 
 
 // Read width value from htaccess
 if( file_exists($acw_uploads['basedir'].'/'.'.htaccess') ) {
