@@ -27,6 +27,12 @@ You have to know that :
 *	you need the GD library.
 *	works only with JPG files (for now).
 
+Available languages in :
+
+* English
+* French (français)
+* Spanish (español)
+
 For support, please visit [alti-Watermark plugin](http://www.alticreation.com/en/alti-watermark/ "watermark plugin for Wordpress by alticreation")
 
 == Installation ==
