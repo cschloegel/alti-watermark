@@ -30,8 +30,8 @@ You have to know that :
 Available languages in :
 
 * English
-* French (français)
-* Spanish (español)
+* French (franÃ§ais)
+* Spanish (espaÃ±ol)
 
 For support, please visit [alti-Watermark plugin](http://www.alticreation.com/en/alti-watermark/ "watermark plugin for Wordpress by alticreation")
 
