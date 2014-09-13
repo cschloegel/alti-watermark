@@ -2,6 +2,15 @@
 
 require_once('paths.php');
 
+// Check if Apache rewrite module is ON
+if( function_exists('apache_get_modules') ){
+    if(in_array('mod_rewrite',apache_get_modules())) {
+        $successApache = TRUE;
+    } else {
+        $successApache = FALSE;
+    }
+}
+
 // Check if watermark doesnt exist
 if ( is_writable(dirname($acw_plugins['path'].'-data')) && !file_exists($acw_plugins['path'].'-data') ) {
     mkdir( $acw_plugins['path'].'-data', 0755, true );
@@ -69,6 +78,10 @@ if( file_exists($acw_uploads['basedir'].'/'.'.htaccess') ) {
 <div id="ac-aw-admin-page-container" class="wrap">
     <h2>alti Watermark <span><?php _e('by', 'altiwatermark'); ?> <a target="_blank" href="http://www.alticreation.com/en/?plugin=alti-watermark">alticreation</a></span></h2>
     <p class="description"><?php _e('Apply a watermark on all your photographies. This action is cancelable just by deactivating the plugin. <br> The watermark will be applied even in your photos already uploaded.', 'altiwatermark'); ?></p>
+    <?php if( isset($successApache) && $successApache === FALSE ) { ?>
+    <div id="setting-error-settings_updated" class="error settings-error"> 
+        <p><strong><?php _e('The Watermark plugin cannot work without the Rewrite Apache Module (<a href="http://httpd.apache.org/docs/current/en/mod/mod_rewrite.html" target="_blank">mod_rewrite</a>). Yourself or your web host has to activate this module.', 'altiwatermark'); ?></strong></p></div>
+    <?php } ?>
     <?php if( isset($successDataDirectory) && $successDataDirectory === FALSE ) { ?>
     <div id="setting-error-settings_updated" class="error settings-error"> 
         <p><strong><?php _e('The plugin couldn\'t create a directory to store the watermark. Be sure you can create directory in the plugins directory.', 'altiwatermark'); ?></strong></p></div>

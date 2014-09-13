@@ -4,9 +4,9 @@ global $width;
 $widthRegex = '';
 if ( isset($width) ) {
 	if( $width == 9999 ) {
-		$widthRegex = '\-([0-9]{1,5})x([0-9]{1,5})';
+		$widthRegex = '\-([0-9]{3,5})(x)([0-9]{2,5})';
 	} else {
-		$widthRegex = '\-([0-9]{1,5})(';
+		$widthRegex = '\-([0-9]{3,5})(';
 			for ($i = 1; $i < $width; $i++) {
 				$widthRegex .= 'x'.$i;
 				if ( $i+1 < $width ) $widthRegex .= '|';
@@ -14,7 +14,7 @@ if ( isset($width) ) {
 			$widthRegex .= ')([0-9]{1,2})';
 }
 } else {
-	$widthRegex = '\-([0-9]{1,5})(x1|x2|x3|x4)([0-9]{1,2})';
+	$widthRegex = '\-([0-9]{3,5})(x1|x2|x3|x4)([0-9]{2,5})';
 }
 
 // check if htaccess already exists
@@ -31,9 +31,11 @@ else {
 }
 
 $htaccessContent     .= '# BEGIN alti-watermark Plugin'."\n\r\n";
+$htaccessContent     .= '<ifModule mod_rewrite.c>'."\n\r\n";
 $htaccessContent     .= 'RewriteEngine on'."\n";
-$htaccessContent     .= 'RewriteRule ^(?!.*'.$widthRegex.'\.jpg$)(.+)(\.jpg)$ '.$acw_relativePaths['uploadsToPlugins'].'watermark.php?imageRequested=$0&watermarkName='.$acw_plugins['baseurl'].$acw_plugins['subdir'].'-data/'.$acw_watermark['name']."\n\r\n";
-$htaccessContent     .= '# END alti-watermark Plugin. (generated on '.date('Y-m-d H:i.s').') [width='.$width.']'."\n";
+$htaccessContent     .= 'RewriteRule ^(?!.*'.$widthRegex.'\.jpg(^\?([a-z0-9-_=&]+)){0,}$)(.+)(\.jpg)((\?[a-z0-9-_=\&]*)*)$ '.$acw_relativePaths['uploadsToPlugins'].'watermark.php?imageRequested=$6$7&watermarkName='.$acw_plugins['baseurl'].$acw_plugins['subdir'].'-data/'.$acw_watermark['name']."\n\r\n";
+$htaccessContent     .= '</ifModule>'."\n\r\n";
+$htaccessContent     .= '# END alti-watermark Plugin. (generated on '.date('Y-m-d H:i.s').' with php '.phpversion().') [width='.$width.']'."\n";
 
 if( is_writable($acw_uploads['basedir'].'/') ) {
 	file_put_contents( $acw_uploads['basedir'].'/'.'.htaccess', $htaccessContent );

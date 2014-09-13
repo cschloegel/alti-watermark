@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: altiwatermark\n"
-"POT-Creation-Date: 2014-04-19 21:37-0400\n"
-"PO-Revision-Date: 2014-04-19 21:37-0400\n"
+"POT-Creation-Date: 2014-09-13 13:33-0500\n"
+"PO-Revision-Date: 2014-09-13 13:34-0500\n"
 "Last-Translator: \n"
 "Language-Team: alticreation <alexis@alticreation.com>\n"
 "Language: fr_FR\n"
@@ -15,11 +15,11 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: admin-page.php:69
+#: admin-page.php:79
 msgid "by"
 msgstr "par"
 
-#: admin-page.php:70
+#: admin-page.php:80
 msgid ""
 "Apply a watermark on all your photographies. This action is cancelable just "
 "by deactivating the plugin. <br> The watermark will be applied even in your "
@@ -29,7 +29,19 @@ msgstr ""
 "filigrane simplement en désactivant l'extension. <br> Le filigrane est "
 "appliqué sur toutes vos photos, même celles déjà téléchargées."
 
-#: admin-page.php:73
+#: admin-page.php:83
+msgid ""
+"The Watermark plugin cannot work without the Rewrite Apache Module (<a href="
+"\"http://httpd.apache.org/docs/current/en/mod/mod_rewrite.html\" target="
+"\"_blank\">mod_rewrite</a>). Yourself or your web host has to activate this "
+"module."
+msgstr ""
+"L'extension Watermark ne peut pas fonctionner sans le Module Apache de "
+"Réécriture (<a href=\"http://httpd.apache.org/docs/current/en/mod/"
+"mod_rewrite.html\" target=\"_blank\">mod_rewrite</a>). Vous-même ou votre "
+"hébergeur web devez activer ce module."
+
+#: admin-page.php:87
 msgid ""
 "The plugin couldn't create a directory to store the watermark. Be sure you "
 "can create directory in the plugins directory."
@@ -38,11 +50,11 @@ msgstr ""
 "vous que vous disposez des droits suffisants pour créer un dossier dans le "
 "dossier des extensions (plugins)"
 
-#: admin-page.php:77
+#: admin-page.php:91
 msgid "The watermark has been updated."
 msgstr "Le filigrane a été mis à jour."
 
-#: admin-page.php:81
+#: admin-page.php:95
 msgid ""
 "There was an error while processing the image submited. Please try again or "
 "with a different image format."
@@ -50,11 +62,11 @@ msgstr ""
 "Il y a eu une erreur dans le traitement de l'image. Pouvez-vous essayer avec "
 "un format d'image différent ?"
 
-#: admin-page.php:85
+#: admin-page.php:99
 msgid "The width setting has been updated."
 msgstr "Le paramètre de largeur a été mis à jour."
 
-#: admin-page.php:89
+#: admin-page.php:103
 msgid ""
 "There was an error while updating the width setting. <br> Apparently you "
 "don't have rights to modify or create a file on your uploads directory."
@@ -63,39 +75,39 @@ msgstr ""
 "<br> Il semble que vous ne puissiez pas modifier ou créer un fichier dans le "
 "repertoire des «uploads»."
 
-#: admin-page.php:96
+#: admin-page.php:110
 msgid "Apply to images"
 msgstr "Appliquer aux images"
 
-#: admin-page.php:101
+#: admin-page.php:115
 msgid "on generated thumbs of height = "
 msgstr "sur les miniatures générées dont la hauteur = "
 
-#: admin-page.php:101
+#: admin-page.php:115
 msgid "or more"
 msgstr "ou plus"
 
-#: admin-page.php:108
+#: admin-page.php:122
 msgid "Choose a watermark"
 msgstr "Choisir un filigrane"
 
-#: admin-page.php:115
+#: admin-page.php:129
 msgid "Preview"
 msgstr "Prévisualisation"
 
-#: admin-page.php:119
+#: admin-page.php:133
 msgid "Real size is actually"
 msgstr "La taille réelle est"
 
-#: admin-page.php:119
+#: admin-page.php:133
 msgid "The background gradient is for contrast check."
 msgstr "L'arrière-plan en dégradé est présent pour vérfier le contraste"
 
-#: admin-page.php:125
+#: admin-page.php:139
 msgid "Help, Support"
 msgstr "Aide, support"
 
-#: admin-page.php:127
+#: admin-page.php:141
 msgid ""
 "A problem, a question ? Please read and leave a message in the <a href="
 "\"http://www.alticreation.com/en/alti-watermark/\" target=\"_blank\">alti "
@@ -105,19 +117,19 @@ msgstr ""
 "\"http://www.alticreation.com/en/alti-watermark/\" target=\"_blank\">page de "
 "l'extension alti Watermark</a>."
 
-#: admin-page.php:128
+#: admin-page.php:142
 msgid "Love this plugin ?"
 msgstr "Vous aimez cette extension ?"
 
-#: admin-page.php:128
+#: admin-page.php:142
 msgid "Donate !"
 msgstr "Donnez !"
 
-#: admin-page.php:135
+#: admin-page.php:149
 msgid "Update"
 msgstr "Mettre à jour"
 
-#: admin-page.php:146
+#: admin-page.php:160
 msgid "This plugin is developed by"
 msgstr "Cette extension est développée par"
 
