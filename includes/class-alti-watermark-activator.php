@@ -10,7 +10,7 @@ class Alti_Watermark_Activator extends Alti_Watermark {
 	*/
 	public function generate_empty_watermark() {
 
-		if( self::check_watermark_folder() !== false ) {
+		if( self::check_watermark_folder() !== false && !file_exists( WP_PLUGIN_DIR . '/' . $this->plugin_name . '-data' . '/watermark.png' )) {
 			$empty_watermark = imagecreatetruecolor(1, 1);
 			imagesavealpha($empty_watermark, true);
 			$transparent = imagecolorallocatealpha($empty_watermark, 0, 0, 0, 127);
