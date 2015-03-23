@@ -10,6 +10,11 @@
 }
 #wrap.alti-watermark .small {
 	font-size: .8em;
+	font-style: none !important;
+}
+#wrap.alti-watermark .alert {
+	font-size: .9em;
+	color: #238ECB;
 }
 #wrap.alti-watermark label span.dashicons-image-crop:before {
 	font-size: 16px !important;

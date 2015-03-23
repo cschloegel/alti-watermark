@@ -222,19 +222,28 @@ class Alti_Watermark_Admin {
 		$relative_path_uploads_to_plugin = self::get_relative_path($uploads_dir, $plugin_dir);
 		$date             = date('Y-m-d H:i.s');
 		$phpv             = phpversion();
-		$htaccessContent .= ' #  ' . $uploads_dir . ' -- ' . $plugin_dir ."\n";
-		$htaccessContent .= ' #  ' . $uploads_url . ' -- ' . $plugin_url ."\n";
 
 		// creation of width Regular Expression
 		if( !empty($widths) ) {
 			$widthRegex .= '(.*';
 			foreach ($widths as $width) {
+				$widthDynamic = explode('x', $width);
 				if($width == $widths[0] && $width != 'fullsize') $widthRegex .= '(';
 				if( $width != 'fullsize' && in_array($width, $_POST['cropped']) == 1 ) $widthRegex .= '-' . $width;
 				if( $width != 'fullsize' && in_array($width, $_POST['cropped']) == 0 ) {
-					$widthDynamic = explode('x', $width);
-					$widthRegex .= '-([1-' . $widthDynamic[0][0] . '][\d]{1,' . intval(strlen($widthDynamic[0])-1) . '}|[\d]{1,' . intval(strlen($widthDynamic[0])-1) . '})x' . $widthDynamic[1];
-					$widthRegex .= '|-'. $widthDynamic[0] . 'x([1-' . $widthDynamic[1][0] . '][\d]{1,' . intval(strlen($widthDynamic[1])-1) . '}|[\d]{1,' . intval(strlen($widthDynamic[0])-1) . '})';
+					
+					if( intval($widthDynamic[0]) > 0 && intval($widthDynamic[1]) > 0 ) {
+						$widthRegex .= '-([1-' . $widthDynamic[0][0] . '][\d]{1,' . intval(strlen($widthDynamic[0])-1) . '}|[\d]{1,' . intval(strlen($widthDynamic[0])-1) . '})x' . $widthDynamic[1];
+						$widthRegex .= '|-'. $widthDynamic[0] . 'x([1-' . $widthDynamic[1][0] . '][\d]{1,' . intval(strlen($widthDynamic[1])-1) . '}|[\d]{1,' . intval(strlen($widthDynamic[0])-1) . '})';
+
+					}
+					if( intval($widthDynamic[0]) == 0 && intval($widthDynamic[1]) > 0 ) {
+						$widthRegex .= '-([\d]+)x' . $widthDynamic[1];
+					}
+					if( intval($widthDynamic[1]) == 0 && intval($widthDynamic[0]) > 0 ) {
+						$widthRegex .= '-'. $widthDynamic[0] . 'x([\d]+)';
+					}
+					
 				}
 				if( $width == 'fullsize' ) $widthRegexFullscreen = true;
 				$widthData .= $width;
@@ -243,6 +252,7 @@ class Alti_Watermark_Admin {
 					$widthData .= '|';
 				}
 			}
+			// if( $widthDynamic[0] > 0 ) $widthRegex .= '##'.$widthDynamic[0].'##';
 			$widthRegex = rtrim($widthRegex, '|') . ')\\.jpg';
 			if(empty($widthRegexFullscreen)) $widthRegex .= ')';
 			if(!empty($widthRegexFullscreen)) {
@@ -303,6 +313,7 @@ class Alti_Watermark_Admin {
 					'type' => 'error',
 					'id' => '3'
 				);
+				return array('fullsize'); // if htaccess exists but width setting is not writable
 			}
 
 		} 
@@ -450,6 +461,10 @@ class Alti_Watermark_Admin {
         }
 
         return $sizes;
+	}
+
+	public function render_image_sizes($image_size) {
+		require plugin_dir_path( __FILE__ ) . 'views/includes/' . $this->plugin_name . '-admin-image-size-label.php';
 	}
 
 	/**

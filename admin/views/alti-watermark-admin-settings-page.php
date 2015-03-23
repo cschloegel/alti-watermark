@@ -28,14 +28,7 @@
 							<legend class="screen-reader-text">
 								<span><?php _e('Images format', $this->plugin_name); ?></span>
 							</legend>
-							<?php foreach($plugin->get_image_sizes() as $image_size) { ?>
-							<label for="size_<?php echo $image_size['name']; ?>">
-								<input type="checkbox" value="<?php echo $image_size['width']; ?>x<?php echo $image_size['height']; ?>" name="sizes[]" id="size_<?php echo $image_size['name']; ?>" <?php if( in_array($image_size['width'] . 'x' . $image_size['height'], $plugin->get_watermark_width()) ) { ?>checked<?php } ?>>
-							
-								<strong><?php echo $image_size['name']; ?></strong>	<em class="description"><?php echo $image_size['width']; ?>x<?php echo $image_size['height']; ?>px</em>  <?php if($image_size['crop']) { ?><span title="<?php _e('cropped', $this->plugin_name); ?>" class="dashicons dashicons-image-crop"></span>
-								<input type="hidden" value="<?php echo $image_size['width']; ?>x<?php echo $image_size['height']; ?>" name="cropped[]"><?php } ?>
-							</label><br>
-							<?php } ?>
+							<?php foreach($plugin->get_image_sizes() as $image_size) { $plugin->render_image_sizes($image_size); } ?>
 							<label for="size_fullsize">
 								<input type="checkbox" value="fullsize" name="sizes[]" id="size_fullsize" <?php if( in_array('fullsize', $plugin->get_watermark_width()) ) { ?>checked<?php } ?>>
 								<strong><?php _e('fullsize', $this->plugin_name); ?></strong> <span class="small">(<?php _e('original image not resized by Wordpress', $this->plugin_name); ?>)</span>

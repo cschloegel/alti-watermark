@@ -4,7 +4,7 @@ Donate link: http://www.alticreation.com/en/alti-watermark/
 Tags: watermark, medias, photography, picture, copyright, photos, logo, upload, signature, images, uploads, media, marca de agua, filigrane, tatouage numerique
 Requires at least: 3.0.1
 Tested up to: 4.0
-Stable tag: 0.3
+Stable tag: 0.3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -64,6 +64,10 @@ You can ask question and read documentation at [alti-Watermark plugin](http://ww
 Major changes in the way the watermark is applied. The plugin has been rewritten on to PHP Oriented-Object Syntax.
 
 == Changelog ==
+
+= 0.3.1 =
+* Fix regular expression when auto width or auto height are set for image sizes. (thanks to Gerhard for tracking this bug).
+* If watermark.png already exists on the activation of the plugin, it will not be replaced by an empty watermark.png.
 
 = 0.3 =
 * **Major changes: Be carefull if you update!**

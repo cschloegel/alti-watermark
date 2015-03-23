@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: alti Watermark 0.3\n"
-"POT-Creation-Date: 2015-03-20 19:40-0500\n"
-"PO-Revision-Date: 2015-03-20 19:41-0500\n"
+"POT-Creation-Date: 2015-03-22 19:49-0500\n"
+"PO-Revision-Date: 2015-03-22 19:49-0500\n"
 "Last-Translator: alticreation <alexis@alticreation.com>\n"
 "Language-Team: \n"
 "Language: es\n"
@@ -85,11 +85,11 @@ msgstr ""
 msgid "Watermark image has been uploaded successfully !"
 msgstr "La imagen de marca de agua se ha subido correctamente!"
 
-#: admin/class-alti-watermark-admin.php:302
+#: admin/class-alti-watermark-admin.php:312
 msgid "Impossible to get the image formats setting."
 msgstr "Es imposible de conseguir el ajuste formatos de imagen."
 
-#: admin/class-alti-watermark-admin.php:330
+#: admin/class-alti-watermark-admin.php:341
 msgid ""
 "Your uploads directory seems to be customized. It uses path that is not "
 "supported or not valid. The plugin will not work properly."
@@ -97,14 +97,14 @@ msgstr ""
 "Su directorio de archivos parece ser personalizado. Utiliza camino que no es "
 "compatible o no válido. El plugin puede no funcionar correctamente."
 
-#: admin/class-alti-watermark-admin.php:390
+#: admin/class-alti-watermark-admin.php:401
 msgid ""
 "The PHP GD Library to manipulate images has not been found on your server."
 msgstr ""
 "La biblioteca PHP GD para manipular las imágenes no se ha encontrado en su "
 "servidor web."
 
-#: admin/class-alti-watermark-admin.php:460
+#: admin/class-alti-watermark-admin.php:475
 msgid "Settings"
 msgstr "Ajustes"
 
@@ -127,41 +127,37 @@ msgstr ""
 msgid "Images format"
 msgstr "Formato de las imágenes"
 
-#: admin/views/alti-watermark-admin-settings-page.php:35
-msgid "cropped"
-msgstr "recortado"
-
-#: admin/views/alti-watermark-admin-settings-page.php:41
+#: admin/views/alti-watermark-admin-settings-page.php:34
 msgid "fullsize"
 msgstr "tamaño completo"
 
-#: admin/views/alti-watermark-admin-settings-page.php:41
+#: admin/views/alti-watermark-admin-settings-page.php:34
 msgid "original image not resized by Wordpress"
 msgstr "imagen original que no ha sido recortada por Wordpress"
 
-#: admin/views/alti-watermark-admin-settings-page.php:49
+#: admin/views/alti-watermark-admin-settings-page.php:42
 msgid "Choose a watermark"
 msgstr "Eligir una marca de agua"
 
-#: admin/views/alti-watermark-admin-settings-page.php:53
+#: admin/views/alti-watermark-admin-settings-page.php:46
 msgid "For transparent background watermark, use a PNG image."
 msgstr ""
 "Para obtener un fondo transparente para la marca de agua, utilice una imagen "
 "PNG."
 
-#: admin/views/alti-watermark-admin-settings-page.php:58
+#: admin/views/alti-watermark-admin-settings-page.php:51
 msgid "Preview"
 msgstr "Vista previa"
 
-#: admin/views/alti-watermark-admin-settings-page.php:64
+#: admin/views/alti-watermark-admin-settings-page.php:57
 msgid "Real size"
 msgstr "Tamaño real"
 
-#: admin/views/alti-watermark-admin-settings-page.php:69
+#: admin/views/alti-watermark-admin-settings-page.php:62
 msgid "Support"
 msgstr "Ayuda"
 
-#: admin/views/alti-watermark-admin-settings-page.php:72
+#: admin/views/alti-watermark-admin-settings-page.php:65
 msgid ""
 "alti Watermark Plugin <a href=\"http://www.alticreation.com/en/alti-"
 "watermark/\" target=\"_blank\">support page</a>."
@@ -169,13 +165,22 @@ msgstr ""
 "<a href=\"http://www.alticreation.com/en/alti-watermark/\" target=\"_blank"
 "\">página de ayuda</a> del plugin alti Watermark."
 
-#: admin/views/alti-watermark-admin-settings-page.php:79
+#: admin/views/alti-watermark-admin-settings-page.php:72
 msgid "Update"
 msgstr "Actualizar"
 
-#: admin/views/alti-watermark-admin-settings-page.php:87
+#: admin/views/alti-watermark-admin-settings-page.php:80
 msgid "alti Watermark plugin is developped by"
 msgstr "Este plugin es desarrollado por"
+
+#: admin/views/includes/alti-watermark-admin-image-size-label.php:10
+msgid "cropped"
+msgstr "recortado"
+
+#: admin/views/includes/alti-watermark-admin-image-size-label.php:15
+msgid "select also fullsize to ensure this format works"
+msgstr ""
+"Elige tambien el tamaño completo para que este formato funcione correctamente"
 
 #: admin/views/includes/alti-watermark-admin-message.php:7
 msgid "Error code"

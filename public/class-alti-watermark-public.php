@@ -17,12 +17,25 @@ class Alti_Watermark_Public {
 	}
 
 	/**
+	 * get image request
+	 * @return value return image requested or false
+	 */
+	private function get_image_requested() {
+		if( !empty($this->image_requested) && strtolower(substr($this->image_requested, -3)) == 'jpg' ) {
+			return $this->image_requested;
+		}
+		else {
+			return false;
+		}
+	}
+
+	/**
 	 * check image requested sent from the user through the htaccess
 	 * @return file image
 	 */
 	public function check_image_requested() {
 
-		if( !empty($this->image_requested) && strtolower(substr($this->image_requested, -3)) == 'jpg' ) {
+		if( $this->get_image_requested() !== false ) {
 
 
 			preg_match('/(.*)' . $this->plugin_name . '(.*)/i', dirname( __FILE__ ), $watermark_folder);
