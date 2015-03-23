@@ -3,7 +3,7 @@ Contributors: alticreation
 Donate link: http://www.alticreation.com/en/alti-watermark/
 Tags: watermark, medias, photography, picture, copyright, photos, logo, upload, signature, images, uploads, media, marca de agua, filigrane, tatouage numerique
 Requires at least: 3.0.1
-Tested up to: 4.0
+Tested up to: 4.1.1
 Stable tag: 0.3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -12,9 +12,9 @@ This plugin allows to add a watermark on all your images, even the ones already 
 
 == Description ==
 
-The watermark is placed on your images through a htaccess and php file. This means your images are actually **not modified**. You can still download them from your FTP, and they will not have any watermark.
+The watermark is placed on your images through a htaccess and php file. This means that your images are actually **not modified**. You can still download them from your FTP, and they will not have any watermark.
 
-It applies watermark on **new images as well as images already uploaded**. 
+It applies the watermark on **new images as well as images already uploaded**. 
 By deactivating the plugin, the watermark will be removed on all images.
 
 You have to know that :
