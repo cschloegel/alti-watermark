@@ -1,4 +1,4 @@
-=== alti Watermark ===
+=== watermark ===
 Contributors: alticreation
 Donate link: http://www.alticreation.com/en/alti-watermark/
 Tags: watermark, medias, photography, picture, copyright, photos, logo, upload, signature, images, uploads, media, marca de agua, filigrane, tatouage numerique
