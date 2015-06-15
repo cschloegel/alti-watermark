@@ -62,7 +62,8 @@
 						<label for="watermarkRange"><span class="dashicons dashicons-tag"></span> <?php _e('Choose watermark width', $this->plugin_name); ?></label>
 					</th>
 					<td width="10%">
-						<input type="range" name="watermarkRange" id="watermarkRange" min="0" max="100" value="75" oninput="rangevalue.value=value">
+						<?php $range = (($it = get_option('alti-watermark-range')) === false) ? 75 : $it; ?>
+						<input type="range" name="watermarkRange" id="watermarkRange" min="1" max="100" value="<?php echo $range; ?>" oninput="rangevalue.value=value">
 					</td>
 					<td >
 						<p class="description"><output id="rangevalue">75</output>&#37;</p>
