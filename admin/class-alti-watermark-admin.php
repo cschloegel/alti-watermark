@@ -187,6 +187,9 @@ class Alti_Watermark_Admin {
 				}
 
 		}
+		if (!empty($_POST['watermarkRange'])){
+			update_option('alti-watermark-range',(int)$_POST['watermarkRange']);
+		}
 
 	}
 
